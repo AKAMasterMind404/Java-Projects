@@ -1,0 +1,49 @@
+// METHOD OVERLOADING IS WHEN MULTIPLE METHODS ARE DECLARED
+// WITH THE SAME NAME YET DIFFERENT NUMBER OR TYPES
+// OF PARAMETERS
+
+Definition: Method Overloading is a feature that allows us to have multiple
+methods within the same class but with differing parameters. This allows
+us to have different implementations for with the same name. Calls to an
+overloaded method will run/return a specific implementation of the method.
+
+Changing just the return type of method will not overload it. In order to
+properly overload a method, the number of parameters must be different by one
+or at-least one parameter should have a different data type.
+
+Usage/Importance: (Why?)
+
+Suppose we have to write a set of methods that add up multiple numbers - say
+2,3 and 4 numbers. It would be redundant to write 3 methods with different
+names such as
+    addTwo(double a, double b),
+    addThree(double a, double b, double c) and
+    addFour(double a,double b,double c,double d)
+
+Instead, we can write the following overloaded methods
+    sum(double a, double b,)
+    sum(double a, double b, double c)
+    sum(double a, double b, double c, double d)
+
+Example:- The System.out.println() Method
+This method has the same name for printing various parameters.
+Each overloading call points to the type of variable that is
+to be printed.
+
+printDouble(double a)
+printFloat(float a)
+printString(String a)
+printInt(int a)
+
+Instead of this,
+
+println(double a)
+println(float a)
+println(String a)
+println(int a)
+
+Why Method Overloading? (Recap)
+
+1. Improves code readability and re-usability.
+2. Easy to remember one name for multiple implementations.
+3. Achieves consistency in naming.

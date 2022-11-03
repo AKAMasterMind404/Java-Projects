@@ -1,0 +1,41 @@
+DECLARE A FLOAT:
+float f1 = 10f;
+// TO MAKE SURE ITS A FLOAT AND NOT A DOUBLE
+// WHICH IS ASSUMED BY DEFAULT
+
+*------*------*------*------*------*
+
+// BOOLEAN REQUIRES 1 BIT
+boolean minValueB = Boolean.FALSE;
+boolean maxValueB = Boolean.TRUE;
+
+// BYTE REQUIRES 8 BITS
+byte minValueBy = Byte.MIN_VALUE;
+byte maxValueBy = Byte.MAX_VALUE;
+
+// CHAR REQUIRES 16 BITS
+char minValueC = Character.MIN_VALUE;
+char maxValueC = Character.MAX_VALUE;
+
+// SHORT REQUIRES 16 BITS
+short minValueS = Short.MIN_VALUE;
+short maxValueS = Short.MAX_VALUE;
+
+// STRING REQUIRES 32 BITS
+String string = "Hello, World!";
+
+// INT REQUIRES 32 BITS
+int minVal = Integer.MIN_VALUE;
+int maxVal = Integer.MAX_VALUE;
+
+// FLOAT REQUIRES 32 BITS
+float minVal = Float.MIN_VALUE;
+float maxVal = Float.MAX_VALUE;
+
+// LONG REQUIRES 64 BITS
+long minValueL = Long.MIN_VALUE;
+long maxValueL = Long.MAX_VALUE;
+
+// DOUBLE REQUIRES 64 BITS
+double minValD = Float.MIN_VALUE;
+double maxValD = Float.MAX_VALUE;
