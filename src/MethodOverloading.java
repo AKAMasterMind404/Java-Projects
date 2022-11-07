@@ -15,12 +15,13 @@ public class MethodOverloading {
     */
 
     public static void main(String[] args) {
-        double v1 = calcFeetAndInchesToCentimeters("10");
-        double v2 = calcFeetAndInchesToCentimeters(10, 3);
-        double v3 = calcFeetAndInchesToCentimeters(20);
-        System.out.println(v1);
-        System.out.println(v2);
-        System.out.println(v3);
+//        double v1 = calcFeetAndInchesToCentimeters("10");
+//        double v2 = calcFeetAndInchesToCentimeters(10, 3);
+//        double v3 = calcFeetAndInchesToCentimeters(20);
+//        System.out.println(v1);
+//        System.out.println(v2);
+//        System.out.println(v3);
+
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {

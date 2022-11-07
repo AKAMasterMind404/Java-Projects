@@ -1,0 +1,26 @@
+// To take user input, follow the given rules:
+
+// First import the java scanner
+import java.util.Scanner;
+
+// Initialize the Scanner object
+Scanner scanner = new Scanner(System.in);
+
+// Methods
+scanner.nextLine(); // Captures the entire line of input
+
+scanner.nextInt(); // Captures the next integer from command line
+
+// Trick
+// Using nextInt() does not reach the end of the line
+// So if you have to capture the next input from the next line
+// Use a scanner.nextLine() call to get the next line
+
+// Similarly, nextDouble() and nextFloat() capture the next
+// double and float objects from the command line
+
+// Use .next() method to skip the next input
+scanner.next();
+
+// Finally, use scanner.close() to close the scanner
+scanner.close()

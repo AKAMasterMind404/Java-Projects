@@ -1,0 +1,49 @@
+Create a class in Java just like in any other language.
+IntelliJ provides a way to automatically implement the
+getters and setters for a class.
+
+1. CODE GENERATION
+Just right click on the class body and click on "Generate.." Option
+
+2. CONSTRUCTOR OVERLOADING
+Just like method overloading for normal methods, you can also
+overload the constructor of a class. Use case includes initialization
+of the class using default values in case no values were passed in the
+constructor. Use the "this" keyword to do so.
+
+Eg:
+
+class Account {
+    private double balance;
+    private String customerName;
+    private String customerEmailAddress;
+
+    public static void main(String[] args) {
+        Account charliesAccount = new Account();
+    }
+
+    public Account(){
+        this(10,"Atharv","atharv@gmail.com");
+        System.out.println("Empty constructor called!");
+    }
+
+    public Account(double balance, String customerName, String customerEmailAddress) {
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        System.out.println("Regular constructor called!");
+    }
+}
+
+But wait, running the main method gives the following output:
+
+    Regular constructor called!
+    Empty constructor called!
+
+This is because of the following flow of control:
+1. The constructor call first calls the "empty" constructor.
+2. The "empty" constructor detects absence of parameters.
+3. It executes the first line having the "this" keyword.
+4. The "this" keyword calls the default constructor with parameters.
+5. The default constructor finishes execution and prints the statement.
+5. The empty constructor finishes execution and prints the statement.
